@@ -13,7 +13,7 @@ body {
 	
 	margin: 0;
 	/* background: #03254c; */
-	background: #1E3D58;
+	background: #000000;
 	/* background: #2b2b2b; */
 	overflow-x: hidden;
 	
@@ -290,7 +290,7 @@ a, a:visited {
 	border-style: solid;
 	border-color: #FFB81C;
 	color: #FFB81C;
-	background-color: rgba(255, 255, 255, 0.699);
+	background-color: rgba(38, 70, 71, 0.555);
 }
 
 #about .row {
@@ -403,7 +403,7 @@ table {
 	/* border-radius: 0.3em; */
 	border-top: 3px solid #FFB81C;
 	border-bottom: 3px solid #FFB81C;
-	background-color: rgba(255,255,255,0.4);
+	background-color:  rgba(38, 70, 71, 0.555);
 	color: #FFB81C;
 }
 
@@ -528,7 +528,7 @@ table {
 	border-style: solid;
 	border-color: #FFB81C;
 	color: #FFB81C;
-	background-color: rgba(255,255,255,0.4);
+	background-color:  rgba(38, 70, 71, 0.555);
 }
 
 /* #organizers .row {
