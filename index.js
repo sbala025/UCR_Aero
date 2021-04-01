@@ -11,10 +11,6 @@ $(function(){
         $("#aboutUsCell_3_Desc").toggle("slow");
      });
 
-   //   $("#aboutUsCell_3").click(function() {
-   //      $("#aboutUsCell_3_Desc").toggle("slow");
-   //   });
-
      $("#aboutUsCell_4").click(function() {
         $("#aboutUsCell_4_Desc").toggle("slow");
      });
