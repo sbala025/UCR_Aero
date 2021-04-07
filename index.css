@@ -430,14 +430,14 @@ table {
 	/* border-radius: 10%; */
 	width: 40%;
 	height: 70%;
-	border: 3px solid #1E3D58;
+	border: 3px solid #FFB81C;
 	border-radius: 0.3em;
 	/* border: 5px solid #FFB81C; */
 }
 
 #stats .picrew2 {
 	/* border-radius: 10%; */
-	border: 3px solid #1E3D58;
+	border: 3px solid #FFB81C;
 	border-radius: 0.3em;
 	width: 45%;
 	height: 75%;
@@ -528,7 +528,7 @@ table {
 	border-style: solid;
 	border-color: #FFB81C;
 	color: #FFB81C;
-	background-color:  rgba(38, 70, 71, 0.555);
+	background-color:  rgba(87, 115, 116, 0.651);
 }
 
 /* #organizers .row {
