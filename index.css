@@ -476,6 +476,49 @@ table {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.flip-card {
+	padding: 0 6%;
+	background-color: transparent;
+	width: 230px;
+	height: 230px;
+	/* border: 3px solid #FFB81C; */
+	border-radius: 0.3em;
+	perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 230px;
+	height: 230px;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 230px;
+	height: 245px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	
+  }
+  
+  .flip-card-back {
+	background-color: #FFB81C;
+	border-radius: 0.3em;
+	color: rgb(0, 0, 0);
+	transform: rotateY(180deg);
+  }
+
 #FAQ .row {
 	text-align: left;
 	width: 70%;
@@ -483,6 +526,17 @@ table {
 	display: grid;
 	-ms-grid-columns: 33% 34% 33%;
 	    grid-template-columns: 33% 34% 33%;
+	margin: auto;
+} 
+
+
+#FAQ .row12 {
+	text-align: left;
+	width: 70%;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 25% 25% 25% 25%;
+	    grid-template-columns: 25% 25% 25% 25%;
 	margin: auto;
 } 
 
@@ -510,6 +564,14 @@ table {
 	/* border-radius: 10%; */
 	width: 230px;
 	height: 230px;
+	border: 3px solid #FFB81C;
+	border-radius: 0.3em;
+}
+
+#FAQ .picrew3 {
+	/* border-radius: 10%; */
+	width: 200px;
+	height: 200px;
 	border: 3px solid #FFB81C;
 	border-radius: 0.3em;
 }
@@ -548,6 +610,7 @@ table {
 }
 
 #organizers .row4 {
+	
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 100%;
@@ -568,6 +631,12 @@ table {
 /* circle makes it look larger */
 #organizers #wincIcon {
 	width: 100%;
+	margin: 10%;
+}
+
+#organizers #main {
+	width: 60%;
+	margin: 3%;
 }
 
 #sponsors {
@@ -947,6 +1016,12 @@ table {
 	}
 
 	#FAQ .row {
+		grid-template-columns: 100%;
+		text-align: left;
+		width: 90%;
+	} 
+
+	#FAQ .row12 {
 		grid-template-columns: 100%;
 		text-align: left;
 		width: 90%;
