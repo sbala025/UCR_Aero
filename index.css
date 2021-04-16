@@ -294,9 +294,9 @@ a, a:visited {
 }
 
 #schedule {
-	width: 90%;
+	width: 80%;
 	padding: 1% 1% 3%;
-	margin: 10% auto;
+	margin: 15% auto;
 	/* border-radius: 0.3em; */
 	font-family: 'Open Sans', sans-serif;
 	/* border-style: solid; */
@@ -613,10 +613,18 @@ table {
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 #FAQ .ans1 {
 	font-weight: 50;
 	font-size: 0.7em;
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#FAQ .ans2 {
+	font-weight: 50;
+	font-size: 0.5em;
+	text-align: left;
 	font-family: 'Open Sans', sans-serif;
 }
 
