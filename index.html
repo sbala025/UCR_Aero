@@ -11,7 +11,11 @@
 		@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Open+Sans:ital@1&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Open+Sans:ital@0;1&display=swap');
     </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="icon" href="webplane.png" type="image/icon type">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:image" content="UCRAeroCon-LogoBlue-Transparent.png">
@@ -22,7 +26,7 @@
 </head>
 <!-- <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a> -->
 	
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 	
 <!-- <div id="quickIcon">
 	<span id="quickcontact">
@@ -38,6 +42,8 @@
 <!-- <video autoplay muted loop id="myVideo">
 	<source src="AuroraFinal.mp4" type="video/mp4">
 </video> -->
+ 
+  
 <div class="video-container">
 	<video autoplay muted loop id="myVideo">
 	  <source src="./UCRAeroConPromo.mp4" type="video/mp4" />
@@ -45,15 +51,49 @@
   </div>
 
 <div id="background">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#">UCR Aerospace Conference 2021</a>
+		  </div>
+		  <div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+				<li><a href="#about">About Us</a></li>
+				<!-- <li><a href="#schedule">Schedule</a></li> -->
+				<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Speakers and Panelists<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#section41">Speakers</a></li>
+					<li><a href="#section42">Alumni Panelists</a></li>
+					<li><a href="#section43">Employee Panelists</a></li>
+				  </ul>
+				</li> -->
+				<li><a href="#FAQ">Speakers & Panelists</a></li>
+				<li><a href="#stats">Projects</a></li>
+				<li><a href="#organizers">Organizers & Sponsors</a></li>
+				<!-- <li><a href="#section7">Sponsors</a></li> -->
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </nav>   
+
 	<div class="section" id="title">
 		<!-- <a href="https://www.google.com/" target="_blank"><img class="main" src="AeroconLinkedin-Cover.png" alt=""></a> -->
-		<h1>UC Riverside </br>Aerospace Conference</h1>
-		<h3>April 17, 2021</h3> 
-		<a href='https://hopin.com/events/uc-riverside-aerospace-conference?ref=a47bd8430f11' target = "_blank"><button class="button">Registration</button></a>
+		<div id="titleTxt">
+			UC Riverside </br>Aerospace Conference
+			<h3>April 17, 2021</h3> 
+		</div>
+		<!-- <a href='https://hopin.com/events/uc-riverside-aerospace-conference?ref=a47bd8430f11' target = "_blank"><button class="button">Registration</button></a> -->
 
-</div>
+	</div>
 
-	<div class="section" id="about">
+	<div class="about" id="about">
 		<div id="aboutUs">
 			<h2>About Us</h2>
 			<div class="row">
@@ -80,7 +120,7 @@
 		</div>
 	</div>
 
-	<div class = "section" id= "schedule">
+	<div class = "schedule" id= "schedule1">
 		<h2>Schedule</h2>
 		<table>
 			<div class="sC">
@@ -210,7 +250,7 @@
 	</div>
 
 	
-	<div class="section" id="FAQ">
+	<div class="FAQ" id="FAQ">
 	
 	
 		<h2>Speakers</h2>
@@ -220,16 +260,18 @@
 				<p class="ans"><b>Hossny El-Sherief</b></p>
 			</span>
 			<span class="box">
-				<p class="question"><img class="picrew2" src="Speakers/Mai Temraz-1.jpeg" alt=""></p>
-				<p class="ans"><b>Mai Temraz</b></p>			
-			</span>
-			<span class="box">
 				<p class="question"><img class="picrew2" src="Speakers/christopher_lynch.jpeg" alt=""></p>
 				<p class="ans"><b>Christopher Lynch</b></p>			
 			</span>
+			<span class="box">
+				<p class="question"><img class="picrew2" src="Speakers/Mai Temraz-1.jpeg" alt=""></p>
+				<p class="ans"><b>Mai Temraz</b></p>			
+			</span>
+			
 		</div>
+	</div>
 
-		<br></br>
+	<div class="section" id="FAQ">
 		<h2>Almuni Panelists</h2>
 		<div class="row12">
 			<span class="box">
@@ -253,8 +295,9 @@
 				<p class="ans2">I graduated in 2015 with a bachelor's in Electrical engineering. I was the Academic Development chair of UCR SWE 2014 - 2015 and also involved in UCR-UAS. I am currently in a System Engineer at Northrop Grumman.</p>			
 			</span>
 		</div>
+	</div>
 
-		<br></br>
+	<div class="section" id="FAQ">
 		<h2>Employee Panelists</h2>
 		<div class="row12">
 			<span class="box">
@@ -291,8 +334,6 @@
 				<p class="ans"><b>Relativity Space</b></p>			
 			</span> -->
 		</div>
-
-		
 	</div>
 
 
@@ -413,8 +454,8 @@
 			</a>
 		</div> -->
 		<p id="copyright">UCR Aerospace Confrence <i class="far fa-copyright"></i> 2021</p>
+		<p id="copyright">Event planned by:<a href="https://www.notion.so/pengchi/Student-involvement-ef078a8c4a854a308b1464ccff8ea0a5" target="_blank">team:)</a></p>
 		<p id="copyright">Website made by Shreya Balaji and Nabil Khalil</p>
-		<p id="copyright">Event planned by:<a href="https://www.google.com/" target="_blank">team:)</a></p>
 	</footer>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -37,6 +37,18 @@ h1, h2, h3 {
 	font-family: 'Domine', serif;
 }
 
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+#myNavbar{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+}
+
 #background {
 	position: relative;
 }
@@ -116,7 +128,7 @@ a, a:visited {
 } */
 
 .video-container {
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	bottom: 0;
 	width: 100%;
@@ -225,11 +237,17 @@ a, a:visited {
 }
 
 #title {
-	font-size: 1.4em;
+	font-size: 2em;
 	height: 100vh;
 	margin: 0;
 	padding: 12% 0 1%;
 
+}
+#titleTxt {
+	font-size: 1.6em;
+	margin: 0;
+	font-family: 'Domine', serif;
+	font-weight: bold;
 }
 
 #title h1 {
@@ -293,16 +311,16 @@ a, a:visited {
 	background-color: rgba(38, 70, 71, 0.555);
 }
 
-#schedule {
-	width: 80%;
-	padding: 1% 1% 3%;
-	margin: 15% auto;
-	/* border-radius: 0.3em; */
+#schedule1 {
+	width: 90%;
+	padding: 1% 1% 2%;
+	margin: 17% auto;
+	border-radius: 0.3em;
 	font-family: 'Open Sans', sans-serif;
-	/* border-style: solid; */
-	/* border-color: #FFB81C;
+	border-style: solid;
+	border-color: #FFB81C; 
 	color: #FFB81C;
-	background-color: rgba(38, 70, 71, 0.555); */
+	background-color: rgba(38, 70, 71, 0.555);
 }
 
 #about .row {
@@ -342,17 +360,16 @@ a, a:visited {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	min-height: 100vh;
-	padding: 4rem 0;
+	width: 100%;
+	/* min-height: 100vh; */
+	/* padding: 4rem 0; */
 	font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
   
 table {
 	width: 100%;
-	max-width: 70rem;
-	padding-top: 7%;
-	padding-left: 1%;
-	padding-right: 1%;
+	/* max-width: 70rem; */
+	padding-left: 12%;
 	position: relative;
 }
 	/* tr:nth-child(even){
@@ -367,6 +384,7 @@ table {
 	th {
 	  font-weight: normal;
 	  border-top: thin dotted #ccc;
+	  max-width: 50rem;
 	}
 	
 	td {
@@ -500,9 +518,16 @@ table {
 }
 
 #FAQ {
+	width: 90%;
+	padding: 1% 1% 3%;
+	margin: 10% auto;
 	position: relative;
-	margin-top:10%;
 	font-family: 'Open Sans', sans-serif;
+	border-style: solid;
+	border-radius: 0.3em;
+	border-color: #FFB81C; 
+	color: #FFB81C;
+	background-color: rgba(38, 70, 71, 0.555);
 }
 
 .flip-card {
