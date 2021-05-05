@@ -956,7 +956,7 @@ table {
 	transition: opacity 0.5s;
 }
 
-/* .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -965,7 +965,7 @@ table {
 	border-width: 0.4em;
 	border-style: solid;
 	border-color: transparent #D9D9D9 transparent transparent;
-} */
+}
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
