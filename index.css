@@ -76,6 +76,10 @@ a, a:visited {
 	color: #FFB81C;
 }
 
+.row::before{
+	content:none;
+}
+
 .button {
 	background-color: #FFB81C; 
 	opacity: 1;
@@ -87,7 +91,7 @@ a, a:visited {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 0.6em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Domine', serif;
 	font-weight: bold;
 	transition-duration: 0.4s;
 	cursor: pointer;
@@ -241,6 +245,7 @@ a, a:visited {
 	height: 100vh;
 	margin: 0;
 	padding: 12% 0 1%;
+	font-family: 'Domine', serif;
 
 }
 #titleTxt {
@@ -951,7 +956,7 @@ table {
 	transition: opacity 0.5s;
 }
 
-.tooltip .tooltiptext::after {
+/* .tooltip .tooltiptext::after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -960,7 +965,7 @@ table {
 	border-width: 0.4em;
 	border-style: solid;
 	border-color: transparent #D9D9D9 transparent transparent;
-}
+} */
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
